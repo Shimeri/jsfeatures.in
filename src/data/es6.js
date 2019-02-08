@@ -1,7 +1,7 @@
 module.exports = [{
         'title': 'Arrow functions',
         'code': 'let obj = {\n  method: function () {\n    return () => this;\n  }\n};\n//Due to lexical scope obj.method()() <===> obj\n\nlet fact = (n) => { return n === 0 ? 1 : n * fact(n-1); };\n\nlet fib = (n) => { return n < 2 ? n : fib(n-1) + fib(n-2); };\n',
-        'info': 'Lexical this, shoter functions.'
+        'info': 'Lexical this, shorter functions.'
     }, {
         'title': 'Block Scope',
         'code': 'var aboutme = () => {\n  {\n    var investements = 1;\n    const salary = 10;\n  }\n  console.log(investements,salary); //1, undefined.\n}\n',
